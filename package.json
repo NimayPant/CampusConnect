@@ -1,0 +1,25 @@
+{
+  "name": "campusflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server/index.js\" \"vite --host 127.0.0.1\"",
+    "server": "node server/index.js",
+    "seed": "node server/seed.js",
+    "seed:reset": "node server/seed.js --reset",
+    "test": "node --test tests/api.test.js",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "express": "latest",
+    "multer": "^2.0.2",
+    "react": "latest",
+    "react-dom": "latest",
+    "sharp": "^0.35.5",
+    "vite": "latest"
+  }
+}
